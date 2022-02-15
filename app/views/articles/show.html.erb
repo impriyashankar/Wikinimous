@@ -1,13 +1,9 @@
-<%= link_to "Edit this task", edit_path  %>
 
-<h2> <%= @task.title %></h2>
-<p><%= @task.details %></p>
-<p>
-  <% if @task.completed%>
-    Completed
-  <% else %>
-    This task is not completed.
-  <% end %>
-</p>
+<h2> <%= @article.title %></h2><%= link_to " Edit", edit_article_path  %><span> | </span><%= link_to "Delete",
+            article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+<p><%= @article.content %></p>
 
-<%= link_to "Back to List", tasks_path  %>
+
+<%= link_to "Back to List", articles_path  %>
