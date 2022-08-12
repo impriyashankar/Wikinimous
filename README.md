@@ -1,24 +1,24 @@
-# README
+# Wikinimous - anonymous Wiki-like app  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> An app where anyone can create a new article or update an existing one.
 
-Things you may want to cover:
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Setup](#setup)
 
-* Ruby version
 
-* System dependencies
+## General Information
+The app loads a feed of random articles(through `faker` gem). The user can select any article, update or delete - and also create new articles to be appended to the feed.
 
-* Configuration
 
-* Database creation
+## Technologies Used
+- Ruby on Rails
 
-* Database initialization
 
-* How to run the test suite
+## Setup
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Generate the Article model through the  Rails generator
+2. Add the faker gem to your `Gemfile` and run `bundle install`. Seed 10 fake articles.
+3. Geneenerate controller and use `resources` to implement actions.
+4. Implement front-end
